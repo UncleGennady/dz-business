@@ -1,0 +1,35 @@
+    @include laptop {
+        .price {
+            padding: 50px 0;
+            .content {
+                display: block;
+            }
+            &__title {
+                padding-bottom: 50px;
+            }
+            &__item {
+                margin-bottom: 15px;
+                padding: 36px 22px 36px;
+            }
+            &__item:hover {
+                position: relative;
+            }
+            p {
+                padding: 0 10px;
+            }
+        }
+    }
+    
+    @include tablet {
+        .price {
+            h3 {
+                padding-bottom: 10px;
+            }
+            &__item-top {
+                padding-bottom: 15px;
+            }
+            &__item-mid {
+                padding-bottom: 10px;
+            }
+        }
+    }

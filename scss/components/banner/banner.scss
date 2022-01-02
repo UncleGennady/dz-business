@@ -1,0 +1,25 @@
+.banner {
+    padding-bottom: 345px;
+    color: $text-color2;
+    padding-top: 110px;
+    background-color: $bg-color-banner;
+    &__content {
+        padding: 0 50px 65px 40px;
+    }
+    h1 {
+        padding-bottom: 15px;
+    }
+    p {
+        font-size: $font-size-m;
+        padding-bottom: 35px;
+    }
+    &__content {
+        @extend %t-a-center;
+    }
+    &__icon {
+        @extend %marginauto;
+    }
+    &__button {
+        @extend %button;
+    }
+}

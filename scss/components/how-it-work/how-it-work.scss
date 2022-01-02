@@ -1,0 +1,76 @@
+.how-it-work {
+    padding: 155px 0 150px 0;
+    @extend %t-a-center;
+    color: $footer-color;
+    .image-breakpoint {
+        display: none;
+    }
+    &__images {
+        @include flex (space-around);
+        padding: 0 110px 0px 65px;
+    }
+    &__title {
+        padding-bottom: 105px;
+        p {
+            font-size: 18px;
+        }
+    }
+    &__dot-line {
+        margin-top: -35px;
+        &:before {
+            content: "";
+            @extend %d-i-block;
+            @include before-after-how-it-work (url("./../img/shape3427.png"));
+            margin-top: 17px;
+            margin-right: -10px;
+        }
+        &:after {
+            content: "";
+            @extend %d-i-block;
+            @include before-after-how-it-work (url("./../img/shape_3_copy_428.png"));
+            margin-top: 17px;
+            margin-left: -10px;
+        }
+    }
+    &__perevert {
+        img {
+            padding-top: 4px;
+        }
+        margin-top: 75px;
+        &:before {
+            content: "";
+            @extend %d-i-block;
+            @include before-after-how-it-work (url("./../img/shape_3_copy_3_604.png"));
+            margin-right: -8px;
+        }
+        &:after {
+            content: "";
+            @extend %d-i-block;
+            @include before-after-how-it-work (url("./../img/shape_3_copy_3_605.png"));
+            margin-left: -8px;
+        }
+    }
+    &__items {
+        @include flex(space-between);
+        padding-bottom: 90px;
+    }
+    &__item {
+        @extend %t-a-center;
+        h3 {
+            font-size: 20px;
+            padding-bottom: 30px;
+            max-width: 85%;
+        }
+        p {
+            font-size: $font-size-xs;
+            line-height: 22px;
+            max-width: 85%;
+        }
+    }
+    a {
+        @extend %button1;
+        &:hover {
+            box-shadow: 0 0 3px 1px $text-color-servises;
+        }
+    }
+}

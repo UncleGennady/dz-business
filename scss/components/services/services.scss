@@ -1,0 +1,35 @@
+.services {
+    color: $text-color-servises;
+    padding-top: 100px;
+    h2 {
+        padding-bottom: 5px;
+    }
+    p {
+        @extend %opensans;
+        font-size: $font-size-xs;
+    }
+    &__title {
+        padding-bottom: 95px;
+        @extend %t-a-center;
+        p {
+            font-size: $font-size-m;
+        }
+    }
+    &__content {
+        @include flex(space-between);
+    }
+    &__item {
+        width: 50%;
+        @include flex(space-around);
+        padding: 0 80px 65px 0;
+    }
+    &__text {
+        max-width: 80%;
+        h3 {
+            padding-bottom: 20px;
+        }
+        p {
+            line-height: 22px;
+        }
+    }
+}

@@ -1,0 +1,67 @@
+    @include desktop {
+        .banner {
+            &__form {
+                @include flex-media(space-around);
+                flex-wrap: wrap;
+            }
+            &__button {
+                button {
+                    width: 280px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+    
+    @include laptop {
+        .banner {
+            &__input-bg {
+                margin: 5px;
+            }
+        }
+    }
+    
+    @include tablet {
+        .banner {
+            padding: 35px 0 35px;
+            &__content {
+                padding: 0 20px;
+            }
+        }
+    }
+    
+    @include mobile {
+        .banner {
+            .input-bg {
+                width: 240px;
+                input {
+                    width: 200px;
+                }
+            }
+            &__button {
+                button {
+                    width: 245px;
+                }
+            }
+            p {
+                font-size: $font-size-s;
+                padding-bottom: 10px;
+            }
+        }
+    }
+    
+    @include mobile_s {
+        .banner {
+            &__input-bg {
+                width: 190px;
+                input {
+                    width: 150px;
+                }
+            }
+            &__button {
+                button {
+                    width: 190px;
+                }
+            }
+        }
+    }

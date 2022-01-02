@@ -1,0 +1,71 @@
+.price {
+    color: $text-color-servises;
+    padding: 137px 0 195px 0;
+    background-color: $bg-color-price;
+    .container {
+        justify-content: center;
+    }
+    p {
+        @extend %lato;
+    }
+    &__title {
+        @extend %t-a-center;
+        padding-bottom: 80px;
+    }
+    h3 {
+        padding-bottom: 30px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+    &__item {
+        padding: 56px 32px 50px;
+        background-color: $text-color2;
+        @extend %t-a-center;
+        transition: .3s;
+        &:hover {
+            background-color: $bg-color-banner;
+            box-shadow: 0px 0px 0px 30px $bg-color-banner;
+            ;
+            z-index: 1;
+            color: $text-color2;
+            & .hover-white {
+                color: $text-color2;
+            }
+        }
+    }
+    &__item-top {
+        padding-bottom: 35px;
+        p {
+            font-size: 20px;
+            font-weight: 300;
+            color: $price__item-top-color;
+            span {
+                font-size: 35px;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+        .cost {
+            font-size: 60px;
+            font-weight: 700;
+            color: $button-color;
+        }
+    }
+    &__item-mid {
+        font-size: 13.5px;
+        line-height: 40px;
+        font-weight: 400;
+        color: $price__item-mid-color;
+        padding-bottom: 30px;
+        p {
+            padding: 0 70px;
+            border-top: 1px solid;
+        }
+    }
+    a {
+        @extend %button1;
+        &:hover {
+            box-shadow: 0 0 3px 1px $text-color2;
+        }
+    }
+}

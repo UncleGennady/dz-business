@@ -1,0 +1,65 @@
+.newsletter {
+    padding: 155px 0 60px 0;
+    @extend %t-a-center;
+    color: $text-color-servises;
+    .content {
+        justify-content: space-around;
+    }
+    &__form {
+        padding: 0 20px 50px;
+    }
+    &__title {
+        padding-bottom: 40px;
+    }
+    &__icon {
+        @extend %marginauto;
+    }
+    &__button {
+        @extend %button;
+        width: 220px;
+    }
+    &__name {
+        width: 310px;
+        input {
+            width: 270px;
+        }
+    }
+    &__email {
+        width: 390px;
+        input {
+            width: 350px;
+        }
+    }
+    .input-bg {
+        border: 1px solid $text-color-servises;
+    }
+    &__contact {
+        padding-top: 38px;
+        height: 549px;
+        background-image: url('./../img/layer_13_744.png');
+        background-size: 100% 100%;
+    }
+    &__item {
+        @extend %d-i-block;
+        width: 285px;
+        height: 298px;
+        background-image: url('./../img/shape_4_751.png');
+        background-size: 100% 100%;
+    }
+    &__address {
+        h3 {
+            color: $text-color2;
+            font-size: 15px;
+            padding-bottom: 15px;
+        }
+        p {
+            font-size: $font-size-xs;
+            line-height: 24px;
+            color: #aeb7ba;
+        }
+        .post {
+            color: $button-color;
+        }
+        padding-top: 70px;
+    }
+}

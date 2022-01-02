@@ -1,0 +1,43 @@
+.footer {
+    color: $footer-color;
+    &__nav {
+        border-top: 1px solid $border-footer;
+        padding-top: 66px;
+        @extend %d-flex;
+        justify-content: center;
+    }
+    &__menu {
+        width: 70%;
+        @include flex(space-between);
+        @extend %list-s-none;
+    }
+    a {
+        color: $footer-color;
+    }
+    &__number {
+        padding: 30px 0 25px;
+        @include flex(center);
+        h3 {
+            font-size: 23px;
+            line-height: 24px;
+        }
+    }
+    &__number-icon {
+        padding-top: 5px;
+        padding-right: 5px;
+    }
+    &__href {
+        padding-bottom: 55px;
+        @extend %t-a-center;
+        a {
+            padding: 0 5px;
+        }
+    }
+    &__copyright {
+        color: $text-color2;
+        font-size: $font-size-xs;
+        @extend %t-a-center;
+        background-color: $bg-color-banner;
+        padding: 15px 0;
+    }
+}

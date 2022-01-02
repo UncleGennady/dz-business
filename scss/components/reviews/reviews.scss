@@ -1,0 +1,53 @@
+.reviews {
+    padding: 140px 0;
+    @extend %t-a-center;
+    background-color: $button-color;
+    color: $text-color2;
+    &__title {
+        padding-bottom: 60px;
+        p {
+            font-size: 16px;
+        }
+    }
+    &__items {
+        color: #7b7b7b;
+        @include flex (space-between);
+    }
+    &__item {
+        background-color: $text-color2;
+        padding: 42px 32px 52px 30px;
+        @extend %d-flex;
+        max-width: 48%;
+        margin-bottom: 20px;
+        text-align: initial;
+    }
+    &__avatar {
+        padding-right: 15px;
+    }
+    &__review-wrapper {
+        @extend %d-flex;
+    }
+    &__text {
+        position: relative;
+        font-size: $font-size-xs;
+        line-height: 22px;
+        padding-top: 5px;
+        margin-bottom: 25px; //------------------------------- при адаптиве лучше работает так 
+    }
+    &__name {
+        @extend %lato;
+        font-size: $font-size-s;
+        color: #99a9ae;
+        span {
+            color: $reviews__name-color;
+        }
+    }
+    .open {
+        padding: 3px 5px 0 0;
+    }
+    .close {
+        position: absolute;
+        bottom: -8%; //---------------------------
+        right: 55%;
+    }
+}

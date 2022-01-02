@@ -1,0 +1,11 @@
+.laptop {
+    @extend %t-a-center;
+    margin: 0 auto -402px;
+    padding: 20px 0 0 5px;
+    width: 647px;
+    height: 343px;
+    background: center url("./../img/vector_smart_object_63.png");
+    img {
+        box-shadow: 0px 0px 5px 5px black;
+    }
+}

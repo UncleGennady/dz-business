@@ -1,0 +1,82 @@
+.container {
+    max-width: 1210px;
+    padding: 0 15px;
+    @extend %margin;
+}
+
+.input-bg {
+    @extend %input-bg;
+}
+
+h1 {
+    font-size: $font-size-xxl;
+    @extend %batman;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: $font-size-xl;
+    @extend %batman;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: $font-size-m;
+    @extend %lato;
+    font-weight: 700;
+}
+
+a {
+    display: inline-block;
+}
+
+.uppercase {
+    text-transform: $uppercase;
+}
+
+.wrap {
+    flex-wrap: $wrap;
+}
+
+.content {
+    @include flex(space-between);
+}
+
+@include desktop {
+    .container {
+        max-width: $breakpoint_xl;
+    }
+}
+
+@include laptop {
+    .container {
+        max-width: $breakpoint_l;
+    }
+}
+
+@include tablet {
+    .container {
+        max-width: $breakpoint_m;
+    }
+}
+
+@include mobile {
+    .container {
+        max-width: $breakpoint_s;
+    }
+    h1 {
+        font-size: $font-size-l;
+    }
+    h2 {
+        font-size: $font-size-m;
+    }
+    h3 {
+        font-size: $font-size-s;
+    }
+}
+
+@include mobile_s {
+    .container {
+        max-width: $breakpoint_xs;
+    }
+}

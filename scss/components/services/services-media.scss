@@ -1,0 +1,27 @@
+@include laptop {
+    .services {
+        &__title {
+            padding-bottom: 50px;
+        }
+        &__content {}
+        &__item {
+            padding: 0 0 35px 0;
+        }
+    }
+}
+
+@include tablet {
+    .services {
+        padding-top: 50px;
+        &__title {
+            padding-bottom: 50px;
+        }
+        &__content {
+            display: block;
+        }
+        &__item {
+            padding: 0 0 35px 0;
+            width: 100%;
+        }
+    }
+}

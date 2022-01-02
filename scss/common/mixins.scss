@@ -1,0 +1,44 @@
+@mixin flex-media ($flex-value) {
+    display: flex;
+    justify-content: $flex-value;
+}
+
+@mixin flex ($flex-value) {
+    @extend %d-flex;
+    justify-content: $flex-value;
+}
+
+@mixin before-after-how-it-work ($url) {
+    background-image: $url;
+    @extend %before-after-how-it-work;
+}
+
+@mixin desktop() {
+    @media (max-width: $breakpoint_xxl) {
+        @content
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: $breakpoint_xl) {
+        @content
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: $breakpoint_l) {
+        @content
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: $breakpoint_m) {
+        @content
+    }
+}
+
+@mixin mobile_s() {
+    @media (max-width: $breakpoint_s) {
+        @content
+    }
+}

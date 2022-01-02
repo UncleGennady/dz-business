@@ -1,0 +1,47 @@
+@include laptop {
+    .footer {
+        &__menu {
+            width: 100%;
+        }
+    }
+}
+
+@include tablet {
+    .footer {
+        &__menu {
+            flex-wrap: wrap;
+            width: 80%;
+            li {
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+@include mobile {
+    .footer {
+        &__nav {
+            padding-top: 30px;
+        }
+        &__menu {
+            width: 100%;
+        }
+        li {
+            padding: 0 5px 20px;
+        }
+        &__number {
+            padding-top: 15px;
+        }
+        &__href {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+@include mobile_s {
+    .footer {
+        &__menu {
+            width: 80%;
+        }
+    }
+}
