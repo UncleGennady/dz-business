@@ -34,20 +34,21 @@
     }
     &__perevert {
         img {
-            padding-top: 4px;
+            transform: rotate(180deg);
+            margin-top: 3px;
         }
         margin-top: 75px;
         &:before {
             content: "";
             @extend %d-i-block;
             @include before-after-how-it-work (url("./../img/shape_3_copy_3_604.png"));
-            margin-right: -8px;
+            margin-right: -9px;
         }
         &:after {
             content: "";
             @extend %d-i-block;
             @include before-after-how-it-work (url("./../img/shape_3_copy_3_605.png"));
-            margin-left: -8px;
+            margin-left: -9px;
         }
     }
     &__items {

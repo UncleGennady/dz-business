@@ -624,17 +624,17 @@ a {
 }
 .how-it-work__perevert img {
   transform: rotate(180deg);
-  margin-top: 3px;
+  padding-top: 4px;
 }
 .how-it-work__perevert:before {
   content: "";
   background-image: url("./../img/shape_3_copy_3_604.png");
-  margin-right: -9px;
+  margin-right: -8px;
 }
 .how-it-work__perevert:after {
   content: "";
   background-image: url("./../img/shape_3_copy_3_605.png");
-  margin-left: -9px;
+  margin-left: -8px;
 }
 .how-it-work__items {
   justify-content: space-between;
@@ -993,4 +993,4 @@ a {
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.style.css.map */
