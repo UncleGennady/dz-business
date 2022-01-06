@@ -3,7 +3,8 @@
     @extend %t-a-center;
     color: $text-color-servises;
     .content {
-        justify-content: space-around;
+        justify-content: center;
+        gap: 11px;
     }
     &__form {
         padding: 0 20px 50px;
